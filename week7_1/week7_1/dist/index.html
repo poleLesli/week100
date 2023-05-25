@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - week7_1</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html> 
+  <head>
+    <link rel="stylesheet" href="week7_1.css"/>
+    
+    <link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
+  </head>
+  <body>
+    <!-- Swiper -->
+    <div id="app">
+      <div class="swiper carousel">
+        <div class="swiper-wrapper">
+          <figure class="swiper-slide" v-for="(card,id) in cards">
+            <div class="box"> 
+              <div class="top"> 
+                <h2 class="name"> {{card.title}} <span class="smalltext">IlluminationBooks </span></h2>
+                <div class="tag"> 
+                  <div class="cirbuttom"></div>
+                </div>
+              </div>
+              <div class="bottom"> 
+                <ul> 
+                  <li> 
+                    <h3>地址：</h3> {{card.address}}
+                  </li>
+                  <li> 
+                    <h3>電話：</h3> {{card.tel}}
+                  </li>
+                  <li> 
+                    <h3>開放時間：</h3> {{card.opentime}}
+                  </li>
+                </ul>
+                <div class="buttons"> 
+                  <div class="btn">前往網站</div>
+                  <div class="btn">更多訊息</div>
+                </div>
+              </div>
+            
+            </div>
+          </figure>
+      </div>
+      <button type="button" class="swiper-button-next"></button>
+			<button type="button" class="swiper-button-prev"></button>
+			<div class="swiper-pagination"> 
+      </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.8/vue.min.js"></script>
+    <script src="week7.js"></script>
+    <!-- Initialize Swiper -->
+  </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
